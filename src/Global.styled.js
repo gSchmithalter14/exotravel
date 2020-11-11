@@ -13,7 +13,8 @@ export default createGlobalStyle`
   body {
     margin: 0 auto;
     min-height: 100vh;
-    width: 70%;
+    width: 80%;
+    background-color: ${(props) => props.theme.main}
   }
 
   h1, h2 {

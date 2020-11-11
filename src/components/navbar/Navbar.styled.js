@@ -4,7 +4,7 @@ export const StyledNav = styled.nav`
   display: flex;
   justify-content: space-between;
   height: 55px;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   width: 100%;
 `;
 
