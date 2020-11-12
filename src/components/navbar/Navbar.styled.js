@@ -4,10 +4,10 @@ export const StyledNav = styled.nav`
   display: flex;
   justify-content: space-between;
   height: 55px;
-  margin: 10px 10%;
+  margin: 10px 0px 25px;
   
   @media screen and (max-width: 600px) {
-      margin: 0px;
+      margin-bottom: 20px;
   }
 `;
 

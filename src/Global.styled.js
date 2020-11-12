@@ -11,9 +11,9 @@ export default createGlobalStyle`
   }
 
   body {
-    margin: 0 auto;
+    margin: 10px auto;
     min-height: 100vh;
-    width: 80%;
+    width: 60%;
     background-color: ${(props) => props.theme.main};
     @media screen and (max-width: 600px) {
       width: 95%;
@@ -24,4 +24,11 @@ export default createGlobalStyle`
     margin-bottom: 1rem;
     letter-spacing: 5px;
   }
+
+  h2 {
+  width: 50px;
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 2.5px ${(props) => props.theme.hippiepinklight} solid;
+}
 `;
