@@ -20,15 +20,4 @@ export default createGlobalStyle`
     }
   }
 
-  h1, h2 {
-    margin-bottom: 1rem;
-    letter-spacing: 5px;
-  }
-
-  h2 {
-  width: 50px;
-  display: inline-block;
-  padding-bottom: 5px;
-  border-bottom: 2.5px ${(props) => props.theme.hippiepinklight} solid;
-}
 `;
