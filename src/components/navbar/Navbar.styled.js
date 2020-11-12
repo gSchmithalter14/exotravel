@@ -4,8 +4,11 @@ export const StyledNav = styled.nav`
   display: flex;
   justify-content: space-between;
   height: 55px;
-  /* padding: 0 20px; */
-  width: 100%;
+  margin: 10px 10%;
+  
+  @media screen and (max-width: 600px) {
+      margin: 0px;
+  }
 `;
 
 export const StyledNavLogo = styled.div`

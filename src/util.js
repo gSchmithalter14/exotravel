@@ -4,8 +4,8 @@ const theme = {
   bluenights: '#353b48',
   lightcyan: '#D2EAE3',
   powderblue: '#AED9D1',
-  hippiepink: '##C44F63',
-  hippiepinklight: '##DE6D82',
+  hippiepink: '#C44F63',
+  hippiepinklight: '#DE6D82',
   moccasin: '#FECB8B',
   sand: '#FAEED8',
 };

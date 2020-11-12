@@ -8,7 +8,7 @@ export default function Navbar() {
     <StyledNav>
       <StyledNavLogo>
         <Link to="/">
-          EXOTRAVEL
+          <h1>EXOTRAVEL</h1>
         </Link>
       </StyledNavLogo>
       <Burger />

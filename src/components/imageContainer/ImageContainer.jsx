@@ -1,10 +1,11 @@
 import React from 'react';
 import { Container, Image } from './imageContainer.styled';
 
-export default function ImageContainer() {
+// eslint-disable-next-line react/prop-types
+export default function ImageContainer({ url }) {
   return (
     <Container>
-      <Image />
+      <Image src={url} />
     </Container>
   );
 }

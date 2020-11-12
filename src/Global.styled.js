@@ -14,11 +14,14 @@ export default createGlobalStyle`
     margin: 0 auto;
     min-height: 100vh;
     width: 80%;
-    background-color: ${(props) => props.theme.main}
+    background-color: ${(props) => props.theme.main};
+    @media screen and (max-width: 600px) {
+      width: 95%;
+    }
   }
 
   h1, h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     letter-spacing: 5px;
   }
 `;

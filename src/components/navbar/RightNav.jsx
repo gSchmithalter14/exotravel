@@ -7,7 +7,7 @@ export default function RightNav({ open, handleOpen }) {
   return (
     <StyledNavItems open={open}>
       <li><StyledLink onClick={handleOpen} to="/">Explore</StyledLink></li>
-      <li><StyledLink onClick={handleOpen} to="/favorites">Favorites</StyledLink></li>
+      <li><StyledLink onClick={handleOpen} to="/results">Results</StyledLink></li>
     </StyledNavItems>
   );
 }
@@ -22,17 +22,16 @@ export const StyledNavItems = styled.ul`
   }
 
   @media (max-width: 768px) {
-    background-color: blue;
+    background-color: ${(props) => props.theme.bluenights};
     flex-flow: column nowrap;
     position: fixed;
-    display: ${(props) => (props.open ? 'flex' : 'none')};
+    transition: ${(props) => (props.open && 'transform .4s ease-in-out')};
     transform: ${(props) => (props.open ? 'trnaslateX(0)' : 'translateX(100%)')};
     top: 0;
     right: 0;
     height: 100vh;
     width: 180px;
     padding-top: 3.5rem;
-    transition: transform 0.3s ease-in-out;
   }
 `;
 
@@ -42,7 +41,7 @@ export const StyledLink = styled(Link)`
   transition: color 200ms;
 
   &:hover {
-    color: #e16365;
+    color: ${(props) => props.theme.hippiepinklight};
   }
 
   @media (max-width: 767px) {
