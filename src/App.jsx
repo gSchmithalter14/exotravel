@@ -7,15 +7,9 @@ import Results from './pages/results';
 import Favorites from './pages/favorites';
 import Favorite from './pages/favorite';
 import Navbar from './components/navbar';
+import theme from './util';
 
 function App() {
-  const theme = {
-    main: '#eff0f3',
-    secondary: '#0d0d0d',
-    tertiary: '#d9376e',
-    highlight: '#ff8e3c',
-  };
-
   return (
     <Router>
       <ThemeProvider theme={theme}>
