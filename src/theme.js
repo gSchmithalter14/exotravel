@@ -1,6 +1,6 @@
 const theme = {
   light: '#FDFEFE',
-  electromagnetic: '##2f3640',
+  electromagnetic: '#2f3640',
   bluenights: '#353b48',
   lightcyan: '#D2EAE3',
   powderblue: '#AED9D1',

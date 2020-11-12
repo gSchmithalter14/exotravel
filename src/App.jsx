@@ -7,7 +7,7 @@ import Results from './pages/results';
 import Favorites from './pages/favorites';
 import Favorite from './pages/favorite';
 import Navbar from './components/navbar';
-import theme from './util';
+import theme from './theme';
 
 function App() {
   return (

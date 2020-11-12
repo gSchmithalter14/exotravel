@@ -4,7 +4,7 @@ export const StyledNav = styled.nav`
   display: flex;
   justify-content: space-between;
   height: 55px;
-  margin: 10px 0px 25px;
+  margin: 10px 0px;
   
   @media screen and (max-width: 600px) {
       margin-bottom: 20px;

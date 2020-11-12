@@ -35,6 +35,10 @@ const images = [
     id: 9,
     url: 'https://images.unsplash.com/photo-1605030832412-4ac086d485a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80',
   },
+  {
+    id: 10,
+    url: 'https://images.unsplash.com/photo-1510662145379-13537db782dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=678&q=80',
+  },
 ];
 
 export default images;

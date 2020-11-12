@@ -32,6 +32,7 @@ export const StyledNavItems = styled.ul`
     height: 100vh;
     width: 180px;
     padding-top: 3.5rem;
+    z-index: 10;
   }
 `;
 

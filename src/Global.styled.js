@@ -11,10 +11,10 @@ export default createGlobalStyle`
   }
 
   body {
-    margin: 10px auto;
+    margin: 10px auto 0px;
     min-height: 100vh;
     width: 60%;
-    background-color: ${(props) => props.theme.main};
+    background-color: ${(props) => props.theme.light};
     @media screen and (max-width: 600px) {
       width: 95%;
     }
