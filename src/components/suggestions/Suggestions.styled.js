@@ -14,7 +14,7 @@ export const Suggestion = styled.div`
       background: transparent;
       border-radius: 10px;
       position: relative;
-
+      box-shadow: 0 25px 60px rgba(0,0,0,.8);
 
       @media screen and (max-width: 600px) {
         margin: 10px
