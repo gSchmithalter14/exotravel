@@ -1,11 +1,11 @@
 const theme = {
-  light: '#eff0f3',
+  light: '#FDFEFE',
   electromagnetic: '##2f3640',
   bluenights: '#353b48',
   lightcyan: '#D2EAE3',
   powderblue: '#AED9D1',
-  chocolate: '#A53832',
-  coral: '#F7724B',
+  hippiepink: '##C44F63',
+  hippiepinklight: '##DE6D82',
   moccasin: '#FECB8B',
   sand: '#FAEED8',
 };
