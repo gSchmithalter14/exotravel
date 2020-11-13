@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import SearchBar from '../../components/searchBar/SearchBar';
 import Suggestions from '../../components/suggestions/Suggestions';
 import { Paragraph, SubTitle } from '../../components/typography/Typography';
 
@@ -10,9 +11,8 @@ export default function Home() {
         <div className="subtitle-wrapper">
           <SubTitle bluenights center>DISCOVER YOUR NEXT ADVENTURE</SubTitle>
         </div>
-        <div className="paragraph-wrapper">
-          <Paragraph light center>What would you like to explore?</Paragraph>
-        </div>
+        <Paragraph light center>What would you like to explore?</Paragraph>
+        <SearchBar />
         <Suggestions />
       </HomeContainer>
     </>
