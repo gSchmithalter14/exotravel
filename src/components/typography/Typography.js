@@ -11,11 +11,16 @@ export const SubTitle = styled.h2`
  letter-spacing: 5px;
  margin-bottom: 1rem;
  font-weight: bold;
- font-size: 3rem;
+ font-size: 2.6rem;
+ 
  color: ${(props) => props.theme.bluenights};
 
  ${(props) => props.center && css`
     text-align: center;
+ `}
+
+ ${(props) => props.nowrap && css`
+    white-space: nowrap;
  `}
 
  ${(props) => props.moccasin && css`

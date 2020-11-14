@@ -1,0 +1,6 @@
+export const GET_COLLECTION = 'GET_COLLECTION';
+export const GET_SEARCH = 'GET_SEARCH';
+
+export const ADD_FAVORITES = 'ADD_FAVORITES';
+export const GET_FAVORITES = 'GET_FAVORITES';
+export const GET_FAVORITE = 'GET_SEAGET_FAVORITERCH';

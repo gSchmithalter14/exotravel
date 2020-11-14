@@ -11,7 +11,7 @@ import gliding from './suggestion_icons/gliding.svg';
 const icons = [
   {
     svg: mountain,
-    type: 'mountain',
+    type: 'mountain biking',
   },
   {
     svg: beach,
@@ -19,11 +19,11 @@ const icons = [
   },
   {
     svg: yoga,
-    type: 'yoga',
+    type: 'camping',
   },
   {
     svg: biking,
-    type: 'biking',
+    type: 'mountain biking',
   },
   {
     svg: hiking,
@@ -31,7 +31,7 @@ const icons = [
   },
   {
     svg: scubaDiving,
-    type: 'scubaDiving',
+    type: 'scuba diving',
   },
   {
     svg: island,
