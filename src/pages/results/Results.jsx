@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React, { } from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
@@ -27,7 +28,7 @@ export default function Results() {
     checkDataNotReady() ? <h1>LOADING</h1> : (
       <>
         <SubTitle nowrap underline>{keyword}</SubTitle>
-        {data.map((img) => <ImageContainer url={img.urls.regular} key={img.id} />)}
+        {data.map((img) => <ImageContainer location={img.location.title} url={img.urls.regular} key={img.id} />)}
       </>
     )
   );
