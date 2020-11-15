@@ -10,6 +10,12 @@ export const Container = styled.div`
     right:20px;
  }
 
+ .location_text {
+    position: absolute; 
+    bottom: 20px;
+    left:20px;
+ }
+
  @media screen and (max-width: 600px) {
       margin: 0px;
   }

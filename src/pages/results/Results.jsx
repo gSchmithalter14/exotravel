@@ -28,7 +28,15 @@ export default function Results() {
     checkDataNotReady() ? <h1>LOADING</h1> : (
       <>
         <SubTitle nowrap underline>{keyword}</SubTitle>
-        {data.map((img) => <ImageContainer location={img.location.title} url={img.urls.regular} key={img.id} />)}
+        {data.map((img) => (
+          <ImageContainer
+            id={img.id}
+            location={img.location.title}
+            url={img.urls.regular}
+            key={img.id}
+            isFaved={false}
+          />
+        ))}
       </>
     )
   );

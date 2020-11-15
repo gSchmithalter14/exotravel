@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <HomeContainer>
         <div className="subtitle-wrapper">
-          <SubTitle bluenights center>DISCOVER YOUR NEXT ADVENTURE</SubTitle>
+          <SubTitle style={{ marginTop: '50px' }} bluenights center>DISCOVER YOUR NEXT ADVENTURE</SubTitle>
         </div>
         <Paragraph light center>What would you like to explore?</Paragraph>
         <SearchBar />

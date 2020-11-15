@@ -11,7 +11,7 @@ import gliding from './suggestion_icons/gliding.svg';
 const icons = [
   {
     svg: mountain,
-    type: 'mountain biking',
+    type: 'mountain',
   },
   {
     svg: beach,
