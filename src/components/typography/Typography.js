@@ -60,9 +60,10 @@ export const LocationTag = styled.h3`
  letter-spacing: 1px;
  font-weight: bold;
  font-size: 1.3rem;
+
  @media screen and (max-width: 600px) {
  font-size: 1.2rem;
 }
 
- color: ${(props) => props.theme.moccasin};
+color: ${(props) => (props.moccasin ? props.theme.moccasin : props.theme.electromagnetic)};
 `;

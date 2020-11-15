@@ -40,6 +40,7 @@ export const StyledLink = styled(Link)`
   font-size: 1.2rem;
   text-decoration: none;
   transition: color 200ms;
+  color: ${(props) => props.theme.electromagnetic};
 
   &:hover {
     color: ${(props) => props.theme.hippiepinklight};

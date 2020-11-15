@@ -17,9 +17,9 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/results/:keyword" component={Results} />
+          <Route path="/results/:keyword" exact component={Results} />
           <Route path="/favorites" exact component={Favorites} />
-          <Route path="/favorites/favorite" component={Favorite} />
+          <Route path="/favorites/:id" exact component={Favorite} />
         </Switch>
       </ThemeProvider>
     </Router>

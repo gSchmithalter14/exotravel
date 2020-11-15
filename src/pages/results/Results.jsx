@@ -31,7 +31,8 @@ export default function Results() {
         {data.map((img) => (
           <ImageContainer
             id={img.id}
-            location={img.location.title}
+            location={`${img.location.name}`}
+            // location={`${img.location.city}, ${img.location.country}`}
             url={img.urls.regular}
             key={img.id}
             isFaved={false}

@@ -3,6 +3,7 @@ function resultsReducer(state = {}, action) {
   switch (type) {
     case 'GET_RESULTS': {
       const data = unfilteredData.filter((d) => d.location.title !== null);
+      console.log(data);
       return { keyword, data };
     }
 
