@@ -11,8 +11,14 @@ export default function Favorites() {
   return (
     <>
       <SubTitle nowrap underline>favorites</SubTitle>
-      {favorites.map((el) => (
-        <FlipComponent key={el.id} location={el.location} url={el.url} id={el.id} />
+      {favorites.map((item) => (
+        <FlipComponent
+          key={item.id}
+          location={item.location}
+          url={item.url}
+          id={item.id}
+          description={item.description}
+        />
       ))}
     </>
   );

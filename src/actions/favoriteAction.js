@@ -11,3 +11,9 @@ export const removeFromFav = (id) => ({
 export const isFav = () => ({
   type: 'IS_FAV',
 });
+
+export const addDescription = (id, description) => ({
+  type: 'ADD_DESCRIPTION',
+  description,
+  id,
+});

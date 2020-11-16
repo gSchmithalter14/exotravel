@@ -5,23 +5,35 @@ import { useDispatch } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarker, faTrash } from '@fortawesome/free-solid-svg-icons';
 import {
-  FavoriteContainer, FavoriteImage, FavoriteContainerBack, FavoriteInfo,
+  FavoriteContainer,
+  FavoriteImage,
+  FavoriteContainerBack,
+  FavoriteInfoContainer,
+  FavoriteInfoForm,
+  FavoriteImageInput,
 } from './Favorites.styled';
 import { LocationTag } from '../../components/typography/Typography';
 
-import { removeFromFav } from '../../actions/favoriteAction';
+import { removeFromFav, addDescription } from '../../actions/favoriteAction';
 
-const FlipComponent = ({ url, id, location }) => {
+const FlipComponent = ({
+  url, id, location, description,
+}) => {
   const [isFlipped, setIsFlipped] = useState(false);
+  const [inputText, setInputText] = useState(description);
   const dispatch = useDispatch();
 
   function handleFlip() {
     setIsFlipped((prevFlip) => !prevFlip);
   }
 
+  function handleInputChange(e) {
+    setInputText(e.target.value);
+  }
+
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
-      <FavoriteContainer onClick={handleFlip}>
+      <FavoriteContainer onDoubleClick={handleFlip}>
         <FavoriteImage src={url} />
         <FontAwesomeIcon
           className="delete_icon"
@@ -41,10 +53,12 @@ const FlipComponent = ({ url, id, location }) => {
           {` ${location}`}
         </LocationTag>
       </FavoriteContainer>
-      <FavoriteContainerBack onClick={handleFlip}>
-        <FavoriteInfo>
-          <h1>This is the back</h1>
-        </FavoriteInfo>
+      <FavoriteContainerBack onDoubleClick={handleFlip}>
+        <FavoriteInfoContainer img={url}>
+          <FavoriteInfoForm>
+            <FavoriteImageInput onChange={handleInputChange} onBlur={() => dispatch(addDescription(id, inputText))} value={inputText} type="text" placeholder="what's on your mind?" />
+          </FavoriteInfoForm>
+        </FavoriteInfoContainer>
       </FavoriteContainerBack>
     </ReactCardFlip>
   );

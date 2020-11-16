@@ -1,10 +1,12 @@
 /* eslint-disable max-len */
 import React from 'react';
+import styled from 'styled-components';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import ImageContainer from '../../components/imageContainer/ImageContainer';
 import { SubTitle } from '../../components/typography/Typography';
+import spinner from '../../assets/spinner.svg';
 
 // Redux actions
 import { loadMoreResults } from '../../actions/resultsAction';
@@ -34,7 +36,7 @@ export default function Results() {
   const { data } = results;
 
   return (
-    checkDataNotReady() ? <h1>LOADING</h1> : (
+    checkDataNotReady() ? <Loader src={spinner} /> : (
       <>
         <SubTitle nowrap underline>{keyword}</SubTitle>
         <InfiniteScroll
@@ -56,3 +58,12 @@ export default function Results() {
     )
   );
 }
+
+const Loader = styled.img`
+  height:200px; 
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;

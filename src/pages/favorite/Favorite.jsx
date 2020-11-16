@@ -10,8 +10,6 @@ export default function Favorite() {
   const { id } = useParams();
   const favorite = useSelector((state) => state.favorites.filter((el) => el.id === id));
 
-  // console.log(favorite);
-
   return (
     <>
       <FavContainer>
