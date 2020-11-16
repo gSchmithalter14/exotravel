@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import Global from './Global.styled';
 import Home from './pages/home';
 import Results from './pages/results';
-import Favorites from './pages/favorites';
+import Favorites from './pages/favorites/Favorites-copy';
 import Favorite from './pages/favorite';
 import Navbar from './components/navbar';
 import theme from './theme';
