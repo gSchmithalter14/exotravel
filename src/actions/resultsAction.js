@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const apiKey = 'R7AKtourLHlFQco2ccOQAmXv16LR9_JDX01SjJ57fA4';
 const count = 10;
 
