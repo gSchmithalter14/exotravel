@@ -6,7 +6,7 @@ import { SuggestionsContainer, Suggestion } from './Suggestions.styled';
 import icons from './icons';
 
 // redux actions
-import getResults from '../../actions/resultsAction';
+import { getResults } from '../../actions/resultsAction';
 
 export default function Suggestions() {
   const dispatch = useDispatch();

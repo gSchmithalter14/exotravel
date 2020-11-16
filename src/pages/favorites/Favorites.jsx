@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarker, faTrash } from '@fortawesome/free-solid-svg-icons';
@@ -19,26 +19,26 @@ export default function Favorites() {
       <SubTitle nowrap underline>favorites</SubTitle>
       {favorites.map((el) => (
         <FavoriteContainer key={el.id}>
-          <Link to={`/favorites/${el.id}`}>
-            <FavoriteImage onDoubleClick={() => console.log('redirect to favorite page')} src={el.url} />
+          {/* <Link to={`/favorites/${el.id}`}> */}
+          <FavoriteImage onDoubleClick={() => console.log('redirect to favorite page')} src={el.url} />
+          <FontAwesomeIcon
+            className="delete_icon"
+            onClick={() => dispatch(removeFromFav(el.id))}
+            style={{ cursor: 'pointer' }}
+            icon={faTrash}
+            size="1x"
+            color="#2f3640"
+          />
+          <LocationTag moccasin className="location_text">
             <FontAwesomeIcon
-              className="delete_icon"
-              onClick={() => dispatch(removeFromFav(el.id))}
               style={{ cursor: 'pointer' }}
-              icon={faTrash}
+              icon={faMapMarker}
               size="1x"
-              color="#2f3640"
+              color="#FECB8B"
             />
-            <LocationTag moccasin className="location_text">
-              <FontAwesomeIcon
-                style={{ cursor: 'pointer' }}
-                icon={faMapMarker}
-                size="1x"
-                color="#FECB8B"
-              />
-              {` ${el.location}`}
-            </LocationTag>
-          </Link>
+            {` ${el.location}`}
+          </LocationTag>
+          {/* </Link> */}
         </FavoriteContainer>
       ))}
     </>
