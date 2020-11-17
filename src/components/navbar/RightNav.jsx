@@ -8,6 +8,7 @@ export default function RightNav({ open, handleOpen }) {
     <StyledNavItems open={open}>
       <li><StyledLink onClick={handleOpen} to="/">Explore</StyledLink></li>
       <li><StyledLink onClick={handleOpen} to="/favorites">Favorites</StyledLink></li>
+      <li><StyledLink onClick={handleOpen} to="/map">Map</StyledLink></li>
     </StyledNavItems>
   );
 }

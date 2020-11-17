@@ -6,6 +6,7 @@ import Home from './pages/home';
 import Results from './pages/results';
 import Favorites from './pages/favorites';
 import Navbar from './components/navbar';
+import Map from './components/map/Map';
 import theme from './theme';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/results/:keyword" exact component={Results} />
           <Route path="/favorites" exact component={Favorites} />
+          <Route path="/map" exact component={Map} />
         </Switch>
       </ThemeProvider>
     </Router>

@@ -1,12 +1,13 @@
 function resultsReducer(state = {}, action) {
   const { type, keyword, unfilteredData } = action;
+
   switch (type) {
     case 'GET_RESULTS': {
-      const data = unfilteredData.filter((d) => d.location.title !== null);
+      const data = unfilteredData.filter((d) => d.location.position.latitude !== null);
       return { keyword, data };
     }
     case 'LOAD_MORE_RESULTS': {
-      const newData = unfilteredData.filter((d) => d.location.title !== null);
+      const newData = unfilteredData.filter((d) => d.location.position.latitude !== null);
       return {
         ...state,
         data: [...state.data, ...newData],

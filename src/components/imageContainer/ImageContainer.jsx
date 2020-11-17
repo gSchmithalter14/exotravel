@@ -12,7 +12,7 @@ import { addToFav, removeFromFav } from '../../actions/favoriteAction';
 
 // eslint-disable-next-line react/prop-types
 export default function ImageContainer({
-  url, location, id, isFaved,
+  url, location, id, isFaved, latitude, longitude,
 }) {
   const dispatch = useDispatch();
 
@@ -21,7 +21,7 @@ export default function ImageContainer({
   function addToFavorites() {
     if (!liked) {
       dispatch(addToFav({
-        id, location, url, faved: true, description: '',
+        id, location, url, faved: true, description: '', latitude, longitude,
       }));
     } else {
       dispatch(removeFromFav(id));

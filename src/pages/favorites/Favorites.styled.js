@@ -70,7 +70,7 @@ export const FavoriteImageInput = styled.textarea`
   background: transparent;
   border-width: 0px;
   border-color: white;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 15px 10px;
   border-radius: 20px;
 

@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable max-len */
 import React from 'react';
 import styled from 'styled-components';
@@ -36,6 +35,8 @@ export default function Results() {
 
   const { data } = results;
 
+  console.log(data);
+
   return (
     checkDataNotReady() ? <Loader src={spinner} /> : (
       <>
@@ -52,6 +53,8 @@ export default function Results() {
               url={img.urls.regular}
               key={img.id}
               isFaved={false}
+              latitude={img.location.position.latitude}
+              longitude={img.location.position.longitude}
             />
           ))}
         </InfiniteScroll>
