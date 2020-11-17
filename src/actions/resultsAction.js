@@ -1,8 +1,10 @@
 /* eslint-disable no-console */
-const apiKey = 'R7AKtourLHlFQco2ccOQAmXv16LR9_JDX01SjJ57fA4';
+const baseUrl = 'https://api.unsplash.com/';
+const apiKey = process.env.REACT_APP_API_KEY;
+const options = `client_id=${apiKey}`;
 const count = 10;
 
-export const getResults = (keyword) => (dispatch) => fetch(`https://api.unsplash.com/photos/random/?client_id=${apiKey}&query=${keyword}&count=${count}`)
+export const getResults = (keyword) => (dispatch) => fetch(`${baseUrl}photos/random/?${options}&count=${count}&query=${keyword}`)
   .then((res) => res.json())
   .then((data) => {
     dispatch({
@@ -15,7 +17,7 @@ export const getResults = (keyword) => (dispatch) => fetch(`https://api.unsplash
     console.error('IMAGES NOT FETCHED:', err);
   });
 
-export const loadMoreResults = (keyword) => (dispatch) => fetch(`https://api.unsplash.com/photos/random/?client_id=${apiKey}&query=${keyword}&count=${count}`)
+export const loadMoreResults = (keyword) => (dispatch) => fetch(`${baseUrl}photos/random/?${options}&count=${count}&query=${keyword}`)
   .then((res) => res.json())
   .then((data) => {
     dispatch({
