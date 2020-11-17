@@ -56,7 +56,7 @@ const FlipComponent = ({
       <FavoriteContainerBack onDoubleClick={handleFlip}>
         <FavoriteInfoContainer img={url}>
           <FavoriteInfoForm>
-            <FavoriteImageInput onChange={handleInputChange} onBlur={() => dispatch(addDescription(id, inputText))} value={inputText} type="text" placeholder="what's on your mind?" />
+            <FavoriteImageInput maxLength="90" onChange={handleInputChange} onBlur={() => dispatch(addDescription(id, inputText))} value={inputText} type="text" placeholder="what's on your mind?" />
           </FavoriteInfoForm>
         </FavoriteInfoContainer>
       </FavoriteContainerBack>

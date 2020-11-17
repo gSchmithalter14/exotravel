@@ -54,30 +54,24 @@ export const FavoriteInfoContainer = styled.div`
 
 export const FavoriteInfoForm = styled.div`
   width: 90%;
-  height: 200px;
-  margin: 0 auto;
-  padding: 15px 0;
+  margin: 10px auto;
+  padding: 20px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 `;
 
-export const FavoriteImageCircle = styled.img`
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-`;
-
-export const FavoriteImageInput = styled.input`
+export const FavoriteImageInput = styled.textarea`
   outline: 0;
-  height: 30px;
+  height: 150px;
+  overflow: auto;
   width: 230px;
   background: transparent;
   border-width: 0px;
   border-color: white;
   background-color: rgba(0, 0, 0, 0.1);
-  padding: 20px 0px;
+  padding: 15px 10px;
   border-radius: 20px;
 
   &, &:focus, &::placeholder  {
