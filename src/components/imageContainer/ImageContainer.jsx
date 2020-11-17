@@ -36,7 +36,7 @@ export default function ImageContainer({
     <Container>
       <Image onDoubleClick={addToFavorites} src={url} />
       <FontAwesomeIcon className="favorite_icon" style={{ cursor: 'pointer' }} onClick={addToFavorites} icon={icon} size="2x" color="#DE6D82" />
-      <LocationTag moccasin className="location_text">
+      <LocationTag onClick={() => window.open(`http://www.google.com/search?q=${location}`)} moccasin className="location_text">
         <FontAwesomeIcon
           style={{ cursor: 'pointer' }}
           icon={faMapMarker}
