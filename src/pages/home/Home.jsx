@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import SearchBar from '../../components/searchBar/SearchBar';
-import Suggestions from '../../components/suggestions/Suggestions';
+import SearchBar from '../../components/searchBar';
+import Suggestions from '../../components/suggestions';
 import { Paragraph, SubTitle } from '../../components/typography/Typography';
 
 export default function Home() {

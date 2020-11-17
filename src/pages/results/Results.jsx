@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import ImageContainer from '../../components/imageContainer/ImageContainer';
+import ImageContainer from '../../components/imageContainer';
 import { SubTitle } from '../../components/typography/Typography';
 import spinner from '../../assets/spinner.svg';
 
