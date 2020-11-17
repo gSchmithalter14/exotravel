@@ -60,6 +60,7 @@ export const LocationTag = styled.h3`
  letter-spacing: 1px;
  font-weight: bold;
  font-size: 1.3rem;
+ cursor: pointer;
 
  @media screen and (max-width: 600px) {
  font-size: 1.2rem;

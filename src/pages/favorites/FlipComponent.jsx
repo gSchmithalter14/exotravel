@@ -43,7 +43,7 @@ const FlipComponent = ({
           size="1x"
           color="#2f3640"
         />
-        <LocationTag moccasin className="location_text">
+        <LocationTag onClick={() => window.open(`http://www.google.com/search?q=${location}`)} moccasin className="location_text">
           <FontAwesomeIcon
             style={{ cursor: 'pointer' }}
             icon={faMapMarker}
