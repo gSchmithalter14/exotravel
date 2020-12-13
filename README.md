@@ -8,6 +8,16 @@
 
 Anyway, open [http://localhost:3000](http://localhost:3000) to view it in your browser, and discover your next adventure! 🌎
 
+#### Technologies I used
+
+<p align="left"> 
+   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> 
+  <a href="https://reactjs.org/" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> 
+  <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>
+   <a target="_blank"> <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.styled-components.com%2F&psig=AOvVaw3NT0OnwHjCaf2BM6BSeLgH&ust=1607962133989000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOjsvfOry-0CFQAAAAAdAAAAABAD" alt="styled-components" width="40" height="40"/> </a> 
+   <a target="_blank"> <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Feveryday.codes%2Fcode-review%2Fcode-review-redux%2F&psig=AOvVaw3zf9j1vc1jeP65c9cnmk1p&ust=1607962055136000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNia4Myry-0CFQAAAAAdAAAAABAD" alt="redux" width="40" height="40"/> </a> 
+</p>
+
 ### Observations
 
  _Room for improvement_
