@@ -2,6 +2,10 @@
 
 🍳 A simple to use mobile-first React application delivering images of places you probably never heard of using the Unsplash public API. You can discover destinations by browsing from a list of suggestions, or with your own search. The app allows you to save these images to your “favorites” with a double tap, along with their locations , at which point you can revisit later and add some thoughts or view them in a map.
 
+<img src="./assets/home.jpeg" width="200" height="400" />
+<img src="./assets/gif-1.gif" width="200" height="400" />
+<img src="./assets/gif-2.gif" width="200" height="400" />
+
 ### How to start!
 
 🚀 Runs the app in the development mode. That's `npm start`.
@@ -29,3 +33,5 @@ Anyway, open [http://localhost:3000](http://localhost:3000) to view it in your b
 
 - Backend integration! Perhaps using a serverless technology.
 - Alternatively, implement a backend GrapQL API.
+
+

@@ -15,7 +15,7 @@ export default function Map({ history }) {
   }
 
   const [selectedLocation, setSelectedLocation] = useState(null);
-  console.log(favorites);
+
   const [viewport, setViewport] = useState({
     width: '100%',
     height: '85vh',

@@ -35,8 +35,6 @@ export default function Results() {
 
   const { data } = results;
 
-  console.log(data);
-
   return (
     checkDataNotReady() ? <Loader src={spinner} /> : (
       <>
