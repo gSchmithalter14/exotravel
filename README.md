@@ -1,4 +1,4 @@
-# ECOTRAVEL
+# EXOTRAVEL
 
 ## What is this
 
